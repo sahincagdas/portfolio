@@ -1,4 +1,4 @@
-import React from 'react';
+
 import AboutContent from './AboutContent';
 
 const AboutSection = () => {
@@ -22,8 +22,7 @@ const AboutSection = () => {
             {/* Bio */}
             <div className="w-full md:w-2/3 text-left">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Hello! I am an experienced Computer Engineer. I am a passionate professional in modern web technologies and software development. Throughout my career, I have developed software solutions that prioritize user experience, scalability, and sustainability.
-              </p>
+                Hello! I’m Cagdas Sahin, a passionate and curious software developer with a background in Computer Engineering and a growing focus on Artificial Intelligence and frontend development. I love building solutions that blend functionality with user-centered design — whether it's a smart automation tool or a visually engaging mobile app.</p>
               <p className="mt-4 text-lg text-gray-600 leading-relaxed">
                 With my approach focused on continuous learning and development, I closely follow new technologies and integrate them into my projects. I value teamwork and open communication, striving to achieve the best outcome in every project.
               </p>

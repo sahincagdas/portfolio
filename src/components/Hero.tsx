@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight animate-fade-in">
-            <span className="block text-gray-900">Hi, I'm Çağdaş Şahin</span>
+            <span className="block text-gray-900">Hi, I'm Cagdas Sahin</span>
             <span className="block gradient-text mt-4"> Jr. Software Developer</span>
             
           </h1>

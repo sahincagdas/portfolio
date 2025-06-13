@@ -1,14 +1,14 @@
-import React from 'react';
-import { Code2, Lightbulb, Users } from 'lucide-react';
+
+import { Code2, Hammer, Lightbulb, Users, Star, Library } from 'lucide-react';
 import AboutCard from './AboutCard';
 
 const AboutContent = () => {
   const qualities = [
-    {
-      icon: Code2,
-      title: "Technical Expertise",
-      description: "Comprehensive experience in modern web technologies and software development tools"
-    },
+        // {
+    //   icon: Code2,
+    //   title: "Technical Expertise",
+    //   description: "Comprehensive experience in modern web technologies and software development tools"
+    // },
     {
       icon: Lightbulb,
       title: "Problem Solving",
@@ -18,7 +18,27 @@ const AboutContent = () => {
       icon: Users,
       title: "Teamwork",
       description: "Contributing to successful projects through effective communication and collaboration"
-    }
+    },
+    {
+      icon: Star,
+      title: "Interests",
+      description: "Artificial Intelligence, Machine Learning, Computer Vision, Web Development, Mobile Development, LLMs, RAG, Prompt Engineering"
+    },
+    {
+      icon: Code2,
+      title: "Languages",
+      description: "Python, JavaScript, HTML, CSS, SQL, C#"
+    },
+    {
+      icon: Library,
+      title: "Frameworks & Libraries",
+      description: "React, React Native, TensorFlow, OpenCV, Pandas, NumPy"
+    },
+    {
+      icon: Hammer,
+      title: "Tools & Platforms",
+      description: "Git, Firebase, Cursor, VS Code, Postman"
+    },
     
   ];
 
