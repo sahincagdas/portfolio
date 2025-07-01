@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectFilter from './ProjectFilter';
 import { projects, categories } from './ProjectsData';
 
 const ProjectsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(3);
+
+  useEffect(() => {
+    setVisibleCount(3);
+  }, [selectedCategory]);
 
   const filteredProjects = projects.filter(project =>
     selectedCategory === "All" ? true : project.category === selectedCategory
   );
+
+  const visibleProjects = filteredProjects.slice(0, visibleCount);
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 3);
+  };
 
   return (
     <section id="projects" className="py-20 bg-gray-100">
@@ -30,7 +41,7 @@ const ProjectsSection = () => {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project) => (
+            {visibleProjects.map((project) => (
               <ProjectCard
                 key={project.id}
                 title={project.title}
@@ -42,6 +53,17 @@ const ProjectsSection = () => {
               />
             ))}
           </div>
+
+          {visibleCount < filteredProjects.length && (
+            <div className="flex justify-center mt-8">
+              <button
+                onClick={handleLoadMore}
+                className="px-6 py-2 bg-blue-500 text-white rounded-full shadow hover:bg-blue-600 transition-colors"
+              >
+                Load More
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>

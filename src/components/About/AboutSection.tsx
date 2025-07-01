@@ -26,11 +26,11 @@ const AboutSection = () => {
               <p className="mt-4 text-lg text-gray-600 leading-relaxed">
                 With my approach focused on continuous learning and development, I closely follow new technologies and integrate them into my projects. I value teamwork and open communication, striving to achieve the best outcome in every project.
               </p>
+              {/*
               <div className="mt-6 space-y-2">
                 <p className="text-gray-700"><strong>Education:</strong> Bachelor of Computer Engineering</p>
-                <p className="text-gray-700"><strong>Experience:</strong> 3+ Years of Professional Software Development</p>
-                <p className="text-gray-700"><strong>Focus Areas:</strong> Web Development, Software Architecture, UI/UX</p>
               </div>
+              */}
             </div>
           </div>
           
